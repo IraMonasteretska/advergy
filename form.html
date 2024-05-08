@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="pagewrapper">
+        <header class="header-form">
+            <a href="#">
+                <img src="img/logo.svg" alt="logo">
+            </a>
+        </header>
+        <main class="main-form">
+            <div class="formcontainer">
+                <div class="forminfotext">
+                    <p>
+                        Please provide all the required information. After filling in all the required fields, you can
+                        sigh the document digitally via email.
+                    </p>
+                    <p>
+                        Please enter the <b>“Signer Name”</b> and <b>“Signer Email”</b> who should sign at the end -
+                        even if you dill it out for them.
+                    </p>
+                </div>
+                <form action="#">
+
+                    <p class="formboxtitle">
+                        <span>
+                            1
+                        </span>
+                        Indicate the annual value of all salary components
+                    </p>
+                    <div class="formbox">
+                        <div class="formbox_field">
+                            <label for="surname">Surname*</label>
+                            <div class="inwutwrapper">
+                                <input id="surname" type="text" value="Mary" required>
+                                <!-- <p class="errortext">Invalid email format.</p> -->
+                            </div>
+                        </div>
+                        <div class="formbox_field">
+                            <label for="forename">Forename*</label>
+                            <div class="inwutwrapper">
+                                <input id="forename" type="text" value="Smith" required>
+                            </div>
+                        </div>
+                        <div class="formbox_field">
+                            <label for="jobtitle">Job Title*</label>
+                            <div class="inwutwrapper">
+                                <input id="jobtitle" type="text" value="Project Manager" required>
+                            </div>
+                        </div>
+                        <div class="formbox_field">
+                            <label for="dignaturedate">Candidate Signature Date*</label>
+                            <div class="inwutwrapper">
+                                <input id="dignaturedate" type="date" value="2024-02-23" required>
+                                <label for="dignaturedate" class="inpicon">
+                                    <img src="img/calendar.svg" alt="calendar">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="formbox_field">
+                            <label for="dignaturedate2">Candidate Signature Date*</label>
+                            <div class="inwutwrapper">
+                                <input id="dignaturedate2" type="date" value="2024-03-01" required>
+                                <label for="dignaturedate2" class="inpicon">
+                                    <img src="img/calendar.svg" alt="calendar">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="formboxtitle">
+                        <span>
+                            2
+                        </span>
+                        Was suchst Du? Gib uns ein paar Infos.
+                    </p>
+                    <div class="formbox">
+                        <div class="formbox_field">
+                            <label for="pa1">Fixum in EUR p.a.*</label>
+                            <div class="inwutwrapper">
+                                <input id="pa1" type="number" placeholder="0.0" value="" max="" min="" required>
+                            </div>
+                        </div>
+                        <div class="formbox_field">
+                            <label for="pa2">Var. Share (with 100% target achievement) in EUR p.a.*</label>
+                            <div class="inwutwrapper">
+                                <input id="pa2" type="number" placeholder="0.0" value="" max="" min="" required>
+                            </div>
+                        </div>
+                        <div class="formbox_field">
+                            <label for="pa3">Company car - leasing rate in EUR p.a.*</label>
+                            <div class="inwutwrapper">
+                                <input id="pa3" type="number" placeholder="0.0" value="" max="" min="" required>
+                            </div>
+                        </div>
+                        <div class="formbox_field">
+                            <label for="pa4">Company insurance p.a.*</label>
+                            <div class="inwutwrapper">
+                                <input id="pa4" type="number" placeholder="0.0" value="" max="" min="" required>
+                            </div>
+                        </div>
+                        <div class="formbox_field">
+                            <label for="pa5">Company pension scheme p.a.*</label>
+                            <div class="inwutwrapper">
+                                <input id="pa5" type="number" placeholder="0.0" value="" max="" min="" required>
+                            </div>
+                        </div>
+                        <div class="formbox_field">
+                            <label for="pa6">Company pension scheme p.a.*</label>
+                            <div class="inwutwrapper">
+                                <input id="pa6" type="number" placeholder="0.0" value="" max="" min="" required>
+                            </div>
+                        </div>
+                        <div class="formbox_field">
+                            <label for="pa7">Other monetary benefits p.a.*</label>
+                            <div class="inwutwrapper">
+                                <input id="pa7" type="number" placeholder="0.0" value="" max="" min="" required>
+                            </div>
+                        </div>
+                        <div class="totaltext">
+                            Total annual gross salary: €<span>0.00</span>
+                        </div>
+
+                    </div>
+
+                    <p class="formboxtitle">
+                        <span>
+                            3
+                        </span>
+                        Customer data for invoicing
+                    </p>
+                    <div class="formbox">
+                        <div class="formbox_field">
+                            <label for="caompname">Company name*</label>
+                            <div class="inwutwrapper">
+                                <input id="caompname" type="text" value="UNC" required>
+                            </div>
+                        </div>
+                        <div class="formbox_field">
+                            <label for="street">Street and house number*</label>
+                            <div class="inwutwrapper">
+                                <input id="street" type="text" value="Baker Str., 24" required>
+                            </div>
+                        </div>
+                        <div class="formbox_field">
+                            <label for="postalcode">Postal code*</label>
+                            <div class="inwutwrapper">
+                                <input id="postalcode" type="number" value="79054" required>
+                            </div>
+                        </div>
+                        <div class="formbox_field">
+                            <label for="city">Postal code*</label>
+                            <div class="inwutwrapper">
+                                <input id="city" type="text" value="London" required>
+                            </div>
+                        </div>
+                        <div class="formbox_field">
+                            <label for="country">Country - only if not Germany</label>
+                            <div class="inwutwrapper">
+                                <input id="country" type="text" value="Great Britain" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="forminfotext">
+                        <p>
+                            Please enter the information you would like to see on the invoice. This information is added
+                            to the standard text we use for invoicing.<br>
+                            If you do not enter any information, the text on the invoice will be: <b>“Placement
+                                commission for: Job Title”</b><br>
+                            Your text on the invoice will then read: <b>Placement commission for: Job Title</b>
+                        </p>
+                    </div>
+
+                    <div class="formbox">
+                        <div class="formbox_field textarea">
+                            <label for="invtext">Invoice text*</label>
+                            <div class="inwutwrapper">
+                                <textarea id="invtext" placeholder="Invoice text goes here" required></textarea>
+                            </div>
+                        </div>
+                        <div class="formbox_field textarea">
+                            <label for="info">Other information/details for the invoice</label>
+                            <div class="inwutwrapper">
+                                <textarea id="info" placeholder="Some details go here"></textarea>
+                            </div>
+                        </div>
+                        <div class="formbox_field">
+                            <label for="email">Signatory E-Mail*</label>
+                            <div class="inwutwrapper">
+                                <input id="email" type="email" value="m.j@gamil.com" required>
+                            </div>
+                        </div>
+                        <div class="formbox_field">
+                            <label for="signatoryname">Signatory Name*</label>
+                            <div class="inwutwrapper">
+                                <input id="signatoryname" type="text" value="Patrick Jackson" required>
+                            </div>
+                        </div>
+                        <div class="checkfiled">
+                            <input type="checkbox" id="check" checked>
+                            <label for="check">
+                                I herebly confirm that all information is trythful and in accordance with the employment
+                                contract of the above-mentioned candidate
+                            </label>
+                        </div>
+
+                        <input class="formsubmitbtn popup__btn" type="submit" value="Sigh by Email" data-popup="typ1">
+                        <!-- <span class="formsubmitbtn popup__btn" data-popup="typ1">
+                            Sigh by Email
+                        </span> -->
+                    </div>
+
+                </form>
+            </div>
+        </main>
+        <footer class="footer-form">
+            <p>
+                Advergy GmbH
+            </p>
+            <ul>
+                <li>
+                    Grimm 6, 20457 Hamburg, Deutschland
+                </li>
+                <li>
+                    Telefon: <a href="tel:+494060944000" class="footertel">+49 40 609 44 000</a>
+                </li>
+                <li>
+                    <a href="mailto:info@advergy.de">info@advergy.de</a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+
+
+
+    <div class="popup__window typ1 ">
+        <div class="container">
+            <div class="popup__wrapper">
+                <div class="popup__body contact-popup">
+                    <div class="popup__close">
+                        <img src="img/close.svg" alt="close">
+                    </div>
+                    <h4>
+                        Thank you for submitting the data
+                    </h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam
+                    </p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="pagewrapper">
+        <header class="header-form">
+            <a href="#">
+                <img src="img/logo.svg" alt="logo">
+            </a>
+        </header>
+        <main class="main-form">
+            <div class="formcontainer fp2">
+                <div class="forminfotext">
+                    <p>
+                        Please choose <b>one</b> of the two options below:
+                    </p>
+                </div>
+                <form action="#">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <div class="mainradio">
+                                <input type="radio" name="mainradio" id="mainradio1" checked>
+                                <label for="mainradio1">Vermittlungsdetails später übermitteln</label>
+                            </div>
+                            <p class="rodioinfotext">
+                                Sie haben die Möglichkeit die Details später zu übermitteln. Bitte sagen Sie uns, wann
+                                wir damit rechnen können.
+                            </p>
+                            <div class="fpradiogroup">
+                                <div class="fpradiogroup__box">
+                                    <input type="radio" name="subradio" id="subradio1" checked>
+                                    <label for="subradio1">2-3 Tage</label>
+                                </div>
+                                <div class="fpradiogroup__box">
+                                    <input type="radio" name="subradio" id="subradio2" checked>
+                                    <label for="subradio2">1 Woche</label>
+                                </div>
+                                <div class="fpradiogroup__box">
+                                    <input type="radio" name="subradio" id="subradio3" checked>
+                                    <label for="subradio3">2 Wochen</label>
+                                </div>
+                            </div>
+                            <div class="frinpfield">
+                                <label for="info">Bitte sagen Sie uns was der Grund für die Verzögerung ist</label>
+                                <div class="inwutwrapper">
+                                    <textarea id="info" placeholder="Some details go here"></textarea>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-5">
+                            <div class="mainradio">
+                                <input type="radio" name="mainradio" id="mainradio2">
+                                <label for="mainradio2">Upload your own file</label>
+                            </div>
+                            <p class="rodioinfotext">
+                                Sie möchten das Dokument nicht über unser Online-Formular ausfüllen? Dann laden Sie
+                                unsere Vorlage zum Ausfüllen herunter und uploaden das Dokument hier. Oder Sie senden es
+                                per E-Mail an <a href="mailto:invoice@advergy.de">invoice@advergy.de</a>.
+                            </p>
+
+                            <div class="file-upload formupl">
+                                <p>Supported Formats: .doc, .pdf, .pptx, .jpg).</p>
+                                <div class="file-upload-wrapper" data-text="Upload your document here">
+                                    <input name="file-upload-field" type="file" class="file-upload-field" value="">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- <div class="checkfiled f2">
+                        <input type="checkbox" id="check" checked>
+                        <label for="check">
+                            I herebly confirm that all information is trythful and in accordance with the employment
+                            contract of the above-mentioned candidate
+                        </label>
+                    </div> -->
+                    <input class="formsubmitbtn " type="submit" value="Submit">
+                </form>
+            </div>
+        </main>
+        <footer class="footer-form">
+            <p>
+                Advergy GmbH
+            </p>
+            <ul>
+                <li>
+                    Grimm 6, 20457 Hamburg, Deutschland
+                </li>
+                <li>
+                    Telefon: <a href="tel:+494060944000" class="footertel">+49 40 609 44 000</a>
+                </li>
+                <li>
+                    <a href="mailto:info@advergy.de">info@advergy.de</a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
