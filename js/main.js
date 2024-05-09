@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function () {
     $('.checkfiled input').change(function () {
         if ($(this).is(':checked')) {
             $('.formsubmitbtn').prop('disabled', false);
@@ -8,13 +8,23 @@ $(document).ready(function(){
     });
 
 
-    $('.popup__btn').on('click', function (e) {
-        e.preventDefault;
-        var indexPopup = $(this).attr('data-popup');
-        $('.popup__window').removeClass('active');
-        $('.' + indexPopup).addClass('active');
-        return false;
-    });
+
+
+
+
+
+
+
+    
+
+
+    // $('.popup__btn').on('click', function (e) {
+    //     e.preventDefault;
+    //     var indexPopup = $(this).attr('data-popup');
+    //     $('.popup__window').removeClass('active');
+    //     $('.' + indexPopup).addClass('active');
+    //     return false;
+    // });
 
     $('.popup__close, .closepopup').on('click', function () {
         $('.popup__window').removeClass('active');
@@ -32,10 +42,10 @@ $(document).ready(function(){
     });
 
     // upload
-    $(".formupl").on("change", ".file-upload-field", function(){ 
-        $(this).parent(".file-upload-wrapper").attr("data-text",         $(this).val().replace(/.*(\/|\\)/, '') );
+    $(".formupl").on("change", ".file-upload-field", function () {
+        $(this).parent(".file-upload-wrapper").attr("data-text", $(this).val().replace(/.*(\/|\\)/, ''));
     });
-      
+
 
 
 
